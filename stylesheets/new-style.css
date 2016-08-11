@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Avenir Next' sans-serif;
+}
+
+.left {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100vh;
+}
+
+.right {
+	position: relative;
+	float: right;
+	width: 50%;
+	height: 100vh;
+}
+
+.center {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.phone {
+	max-width: 70%;
+	max-height: 70vh;
+}
+
+.demo {
+	max-width: 64%;
+	max-height: 54.5vh;
+}
+
+.content {
+	width: 100%;
+}
+
+.title {
+	max-width: 90%;
+	max-height: 3rem;
+	margin-bottom: 2rem;
+}
+
+h2 {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+		margin-left: 2%;
+}
+
+p {
+		margin-left: 2%;
+}
