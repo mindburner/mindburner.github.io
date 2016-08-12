@@ -6,6 +6,7 @@
 	<title>Mindburner (Coming Soon)</title>
 	<!-- <link rel="stylesheet" href="stylesheets/styles.css">
 	<link rel="stylesheet" href="stylesheets/github-dark.css"> -->
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<link rel="stylesheet" href="stylesheets/new-style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="javascripts/respond.js"></script>
@@ -22,16 +23,50 @@
 
 	<div class="left">
 		<video src="demo.mov" autoplay autostart loop muted class="demo center"></video>
-			<img src="phone.svg" class="phone center">
+		<img src="phone.svg" class="phone center">
 	</div>
 	<div class="right">
 		<div class="content center">
 			<img src="title.png" class="title">
 			<h2>Forget about forgetting your passwords</h2>
-			<p>Coming soon to iOS</p>
+			<p>
+				Coming soon to iOS. <br>
+				In the meantime, sign up for our beta:
+			</p>
+			<form id="gform" method="POST" class="pure-form pure-form-stacked"
+			action="https://script.google.com/macros/s/AKfycbxa6Tc_9gkovq8O5XbPiM3My9LqAFJD-w0CWMq59ByUpw8QDGpu/exec">
+			<fieldset class="pure-group">
+				<input id="first-name" name="first-name" placeholder="First Name" />
+			</fieldset>
+
+			<fieldset class="pure-group">
+				<input id="last-name" name="last-name" placeholder="Last Name" />
+			</fieldset>
+
+			<fieldset class="pure-group">
+				<input id="email" name="email" type="email" value=""
+				required placeholder="E-mail Address"/>
+				<span id="email-invalid" style="display: none;">
+					You did not enter a valid e-mail address.
+				</span>
+			</fieldset>
+
+			<button class="button-success pure-button button-xlarge">
+				Send
+			</button>
+		</form>
+		<!-- Customise the Thankyou Message People See when they submit the form: -->
+		<div style="display:none;" id="thankyou_message">
+			<h2>Thanks for signing up! We will let you know when the beta becomes available.</h2>
 		</div>
 	</div>
-	<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+</div>
+<!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
-</body>
+
+<!-- Submit the Form to Google Using "AJAX" -->
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+<!-- <script data-cfasync="false" type="text/javascript"
+src="/form-submission-handler.js"></script> -->
 </html>

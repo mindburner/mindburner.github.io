@@ -51,10 +51,25 @@ body {
 h2 {
 	font-size: 1rem;
 	font-weight: 600;
-	margin-bottom: 0.5rem;
-		margin-left: 2%;
+	margin-bottom: 2rem;
 }
 
 p {
-		margin-left: 2%;
+	margin-bottom: 0.5rem;
+	width: 90%;
+}
+
+button {
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+input {
+	width: 90%;
+	max-width: 22rem;
+}
+
+#email-invalid {
+	margin: 1rem 0;
+	color: #DB5250;
 }
