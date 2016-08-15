@@ -22,8 +22,11 @@
 <body>
 
 	<div class="left">
-		<video src="demo.mov" autoplay autostart loop muted poster="/demo-poster.png" class="demo center"></video>
+		<video src="demo.mov" autoplay autostart loop muted poster="demo-poster.png" class="demo center" onclick="alert('hey');"></video>
 		<img src="phone.svg" class="phone center">
+	</div>
+	<div class="scroll-button" onclick="window.scrollTo(0,document.body.scrollHeight);">
+		<img src="caret.svg" alt="Scroll">
 	</div>
 	<div class="right">
 		<div class="content center">

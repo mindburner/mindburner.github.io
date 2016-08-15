@@ -15,19 +15,37 @@ body {
 
 .right {
 	position: relative;
-	float: right;
+	width: 100%;
 	height: 100vh;
 }
 
-@media (min-width: 20rem) {
+.scroll-button {
+	position: relative;
+	top: -3rem;
+	width: 100%;
+	height: 3rem;
+	text-align: center;
+}
+
+.scroll-button img {
+	height: 1rem;
+	width: 1rem;
+}
+
+@media (min-width: 40rem) {
 	.left {
 		float: left;
 		width: 50%;
+		height: 100vh;
 	}
 
 	.right {
 		float: right;
 		width: 50%;
+	}
+
+	.scroll-button {
+		display: none;
 	}
 }
 
@@ -50,11 +68,19 @@ body {
 }
 
 .content {
-	width: 100%;
+	text-align: center;
+	width: 80%;
+}
+
+@media(min-width: 40rem) {
+	.content {
+		text-align: left;
+		width: 100%;
+	}
 }
 
 .title {
-	max-width: 90%;
+	max-width: 100%;
 	max-height: 3rem;
 	margin-bottom: 2rem;
 }
@@ -76,8 +102,14 @@ button {
 }
 
 input {
-	width: 90%;
-	max-width: 22rem;
+	width: 100%;
+}
+
+@media(min-width: 40rem) {
+	input {
+		width: 90%;
+		max-width: 25rem;
+	}
 }
 
 #email-invalid {
