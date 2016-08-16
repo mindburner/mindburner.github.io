@@ -25,43 +25,43 @@
 		<video src="demo.mov" autoplay autostart loop muted poster="demo-poster.png" class="demo center"></video>
 		<img src="phone.svg" class="phone center">
 	</div>
-	<div class="scroll-button" onclick="window.scrollTo(0,document.body.scrollHeight);">
+	<div class="scroll-button" onclick="this.scrollIntoView();">
 		<img src="caret.svg" alt="Scroll">
 	</div>
 	<div class="right">
-		<div class="content center">
-			<img src="title.png" class="title">
-			<h2>Forget about forgetting your passwords</h2>
-			<p>
-				Coming soon to iOS. <br>
-				In the meantime, sign up for our beta:
-			</p>
-			<form id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbxa6Tc_9gkovq8O5XbPiM3My9LqAFJD-w0CWMq59ByUpw8QDGpu/exec">
-				<fieldset class="pure-group">
-					<input id="first-name" name="first-name" placeholder="First Name" />
-				</fieldset>
+		<img src="title.png" class="title" alt="Mindburner">
+		<h2>Forget about forgetting your passwords.</h2>
+		<p>
+			Coming soon to iOS. <br>
+			In the meantime, sign up for our beta:
+		</p>
+		<form id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbxa6Tc_9gkovq8O5XbPiM3My9LqAFJD-w0CWMq59ByUpw8QDGpu/exec">
+			<fieldset class="pure-group">
+				<input id="first-name" name="first-name" placeholder="First Name" />
+			</fieldset>
 
-				<fieldset class="pure-group">
-					<input id="last-name" name="last-name" placeholder="Last Name" />
-				</fieldset>
+			<fieldset class="pure-group">
+				<input id="last-name" name="last-name" placeholder="Last Name" />
+			</fieldset>
 
-				<fieldset class="pure-group">
-					<input id="email" name="email" type="email" value=""
-					required placeholder="E-mail Address"/>
-					<span id="email-invalid" style="display: none;">
-						You did not enter a valid e-mail address.
-					</span>
-				</fieldset>
-			</form>
+			<fieldset class="pure-group">
+				<input id="email" name="email" type="email" value=""
+				required placeholder="E-mail Address"/>
+				<span id="email-invalid" style="display: none;">
+					You did not enter a valid e-mail address.
+				</span>
+			</fieldset>
 
 			<button class="button-success pure-button button-xlarge">
-				Send
+				Sign Up
 			</button>
+		</form>
 
-			<div style="display:none;" id="thankyou_message">
-				<h2>Thanks for signing up! We will let you know when the beta becomes available.</h2>
-			</div>
+		<div style="display:none;" id="thankyou_message">
+			<h2>Thanks for signing up! We will let you know when the beta becomes available.</h2>
+		</div>
 
+		<div class="faq">
 			<h2>What is Mindburner?</h2>
 			<p>
 				Mindburner is an iPhone app that leverages your visual memory to keep your sensitive information like passwords secure. Remembering passwords is hard, but recognizing images in a grid of images you haven’t seen before is easy. Mindburner translates the images you selected into characters. The key is that every selection of images translates into some information, but only you know which selection translates into your information.
@@ -93,6 +93,19 @@
 				Yes, you can. In fact, there are decades of academic research (including our own) that say you can easily recall hundreds of images over long periods of time.
 			</p>
 
+			<h2>What if I forget my images?</h2>
+			<p>
+				Forgetting your images is very unlikely, but it is possible over long periods of time. Unfortunately, there is currently no process for recovering them. We recommend refreshing your memory at least twice a week to prevent this from happening. Our tag-based image training process is designed so that if you do forget an image, remembering the tags associated with that image should be enough to remind you.
+			</p>
+			<p>
+				In future versions, Mindburner will also be able to correct some errors. With error correction, the correct passwords will still be revealed as long as you only forget one or two images.
+			</p>
+
+			<h2>Why are my passwords all wrong?</h2>
+			<p>
+				You selected the wrong images. See above if you forgot what your target images are.
+			</p>
+
 			<h2>Where do these images come from?</h2>
 			<p>
 				We hand curated a set of 200 memorable images from the public domain. We will keep adding new images over time. At the moment, you can’t choose which images are yours or use your own images, but we are considering these features for future versions.
@@ -116,23 +129,13 @@
 				However, if an attacker steals your phone it is possible to determine whether two passwords are the same by comparing the image-to-character maps for each password. This is an issue in the current beta version, but we are already working on a solution.
 			</p>
 
-			<h2>What if I forget my images?</h2>
-			<p>
-				Forgetting your images is very unlikely, but it is possible over long periods of time. Unfortunately, there is currently no process for recovering them. We recommend refreshing your memory at least twice a week to prevent this from happening. Our tag-based image training process is designed so that if you do forget an image, remembering the tags associated with that image should be enough to remind you.
-			</p>
-			<p>
-				In future versions, Mindburner will also be able to correct some errors. With error correction, the correct passwords will still be revealed as long as you only forget one or two images.
-			</p>
-
-			<h2>Why are my passwords all wrong?</h2>
-			<p>
-				You selected the wrong images. See above if you forgot what your target images are.
-			</p>
-
 			<h2>Why isn’t ______ working?</h2>
 			<p>
-				That depends. Tell us about it by sending an email to feedback@mindburner.io. The app is still in its early stages, so we need your help to figure out what is working, what isn’t, and how it can be improved.
+				That depends. Tell us about it by sending an email to <a href="mailto:feedback@mindburner.com">feedback@mindburner.io</a>. The app is still in its early stages, so we need your help to figure out what is working, what isn’t, and how it can be improved.
 			</p>
+		</div>
+		<div class="copyright">
+			&copy; 2016, Mindburner
 		</div>
 	</div>
 	<!--[if !IE]><script>fixScale(document);</script><![endif]-->
