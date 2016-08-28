@@ -22,12 +22,14 @@
 <body>
 
 	<div class="left">
-		<video src="demo.mov" autoplay autostart loop muted poster="demo-poster.png" class="demo center"></video>
-		<img src="phone.svg" class="phone center">
+		<div class="demo">
+			<video src="demo.mov" autoplay autostart loop muted poster="demo-poster.png"></video>
+			<img src="phone.svg">
+		</div>
 	</div>
-	<div class="scroll-button" onclick="this.scrollIntoView();">
+	<!-- <div class="scroll-button" onclick="this.scrollIntoView();">
 		<img src="caret.svg" alt="Scroll">
-	</div>
+	</div> -->
 	<div class="right">
 		<img src="title.png" class="title" alt="Mindburner">
 		<h2>Forget about forgetting your passwords.</h2>
@@ -101,12 +103,12 @@
 				In future versions, Mindburner will also be able to correct some errors. With error correction, the correct passwords will still be revealed as long as you only forget one or two images.
 			</p>
 
-			<h2>Why are my passwords all wrong?</h2>
+			<h2>Why are my existing passwords incorrect?</h2>
 			<p>
 				You selected the wrong images. See above if you forgot what your target images are.
 			</p>
 
-			<h2>Why is my password too long?</h2>
+			<h2>Why is my new password too long?</h2>
 			<p>
 				There aren’t enough images to represent your password. We are continuously adding new images, so there should be enough for your password soon.
 			</p>

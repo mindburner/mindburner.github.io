@@ -4,7 +4,7 @@
 }
 
 html {
-	font-size: 20px;
+	font-size: 18px;
 }
 
 body {
@@ -15,11 +15,22 @@ body {
 
 .left {
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
 }
 
 .right {
-	margin: 3rem;
+	margin: 0 1rem;
+	padding-bottom: 1rem;
+}
+
+@media (min-width: 30rem) {
+	body {
+		font-size: 20px;
+	}
+
+	.right {
+		margin: 0 3rem;
+	}
 }
 
 @media (min-width: 40rem) {
@@ -31,9 +42,9 @@ body {
 
 	.right {
 		width: 40%;
-		margin-top: 15vh;
 		margin-left: 50%;
 		margin-right: 10%;
+		padding: 5rem 0;
 	}
 }
 
@@ -50,22 +61,35 @@ body {
 	width: 1rem;
 }
 
-.center {
+.demo video {
 	position: absolute;
-	top: 50%;
+	width: 64%;
+	max-height: 43.6vh;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-.phone {
+.demo img {
+	position: absolute;
 	pointer-events: none;
-	max-width: 70%;
-	max-height: 70vh;
+	width: 70%;
+	max-height: 56vh;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-.demo {
-	max-width: 64%;
-	max-height: 54.5vh;
+@media (min-width: 40rem) {
+	.demo video {
+		max-height: 54.5vh;
+		top: 50%;
+	}
+
+	.demo img {
+		max-height: 70vh;
+		top: 50%;
+	}
 }
 
 .title {
@@ -96,7 +120,7 @@ p {
 
 li {
 	margin-bottom: 1rem;
-	margin-left: 1rem;
+	margin-left: 1.5rem;
 }
 
 button {
